@@ -1,62 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página - Módulo I - Primeiros Passos com HTML</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+<body class="bg-gray-100 text-gray-900 font-sans p-6 *:mt-8">
+  <header>
+    <h1 class="text-3xl font-semibold">Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr class="my-4" />
+  </header>
+
+  <section id="index">
+    <h2 class="text-2xl mb-2">Índice</h2>
+    <ul
+      class="list-disc mb-4 *:w-max pl-6 *:after:content-[''] *:after:block *:after:w-0 *:after:h-0.5 *:after:bg-zinc-700 *:hover:after:w-full *:focus:after:w-full *:after:transition-all *:after:duration-400">
+      <li><a href="#history">História dos computadores</a></li>
+      <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+      <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+      <li><a href="#structures">Como é uma estrutura básica de um HTML?</a></li>
+      <li><a href="#diffs">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+      <li><a href="#refs">Links de referências</a></li>
     </ul>
+  </section>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+  <section id="history">
+    <header class="flex items-baseline gap-4 mb-2">
+      <h2 class="text-2xl">História dos computadores</h2>
+      <a href="#" onclick="window.location.hash='';window.scrollTo(0,0);return false;"
+        class="text-blue-600 text-sm underline">Voltar ao índice</a>
+    </header>
+    <article>
+      <p>
+        A <strong>história dos computadores</strong> é marcada por avanços tecnológicos que transformaram a sociedade.
+        Desde as primeiras máquinas de calcular, como a <strong>máquina analítica</strong> de Charles Babbage, até os
+        modernos computadores pessoais, houve uma evolução impressionante.<br>
+        <i>Os computadores</i> passaram de equipamentos enormes e caros para dispositivos acessíveis e presentes no
+        cotidiano.<br>
+      </p>
+    </article>
+  </section>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+  <section id="clients">
+    <header class="flex items-baseline gap-4 mb-2">
+      <h2 class="text-2xl">O que são <i>Clients</i>?</h2>
+      <a href="#" onclick="window.location.hash='';window.scrollTo(0,0);return false;"
+        class="text-blue-600 text-sm underline">Voltar ao índice</a>
+    </header>
+    <article>
+      <p>
+        <strong><u>Clients</u></strong> são dispositivos ou programas que acessam serviços ou recursos oferecidos por um
+        <i>servidor</i>. Por exemplo, quando você usa um navegador para acessar um site, seu computador ou celular está
+        atuando como um <strong>client</strong>.<br>
+        <i>Clients</i> podem ser computadores, smartphones, tablets ou até mesmo aplicativos.<br>
+      </p>
+    </article>
+  </section>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+  <section id="servers">
+    <header class="flex items-baseline gap-4 mb-2">
+      <h2 class="text-2xl">O que são <i>Servers</i>?</h2>
+      <a href="#" onclick="window.location.hash='';window.scrollTo(0,0);return false;"
+        class="text-blue-600 text-sm underline">Voltar ao índice</a>
+    </header>
+    <article>
+      <p>
+        <strong><u>Servers</u></strong> (servidores) são computadores ou programas responsáveis por fornecer serviços,
+        dados ou recursos para outros dispositivos, chamados de <i>clients</i>.<br>
+        Um <strong>servidor</strong> pode hospedar sites, armazenar arquivos ou gerenciar bancos de dados.<br>
+      </p>
+    </article>
+  </section>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+  <section id="structures">
+    <header class="flex items-baseline gap-4 mb-2">
+      <h2 class="text-2xl">Como é uma estrutura básica de um HTML?</h2>
+      <a href="#" onclick="window.location.hash='';window.scrollTo(0,0);return false;"
+        class="text-blue-600 text-sm underline">Voltar ao índice</a>
+    </header>
+    <article>
+      <p>
+        A estrutura básica de um documento HTML é composta por elementos semânticos que ajudam a organizar e dar
+        significado ao conteúdo. Esses elementos incluem:
+      </p>
+      <section>
+        <h3 class="text-xl font-semibold">Elementos principais:</h3>
+        <ul class="list-disc pl-6">
+          <li><strong>&lt;!DOCTYPE html&gt;</strong>: Declaração que define o tipo de documento como HTML5.</li>
+          <li><strong>&lt;html&gt;</strong>: Elemento raiz que contém todo o conteúdo do documento.</li>
+          <li><strong>&lt;head&gt;</strong>: Contém metadados, como título, links para estilos e scripts.</li>
+          <li><strong>&lt;body&gt;</strong>: Abriga o conteúdo visível da página, como textos, imagens e links.</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="text-xl font-semibold">Exemplo de estrutura básica:</h3>
+        <pre class="bg-gray-200 rounded-xl pt-4 m-8 mb-2">
+          <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;title&gt;Título da Página&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;header&gt;
+            &lt;h1&gt;Cabeçalho Principal&lt;/h1&gt;
+          &lt;/header&gt;
+          &lt;main&gt;
+            &lt;p&gt;Conteúdo principal da página.&lt;/p&gt;
+          &lt;/main&gt;
+          &lt;footer&gt;
+            &lt;p&gt;Rodapé da página.&lt;/p&gt;
+          &lt;/footer&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+          </code>
+        </pre>
+      </section>
+      <p>
+        Utilizar elementos semânticos como <strong>&lt;header&gt;</strong>, <strong>&lt;main&gt;</strong>, e
+        <strong>&lt;footer&gt;</strong> melhora a acessibilidade e facilita o entendimento do conteúdo por navegadores e
+        motores de busca.
+      </p>
+    </article>
+  </section>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+  <section id="diffs">
+    <header class="flex items-baseline gap-4 mb-2">
+      <h2 class="text-2xl">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+      <a href="#" onclick="window.location.hash='';window.scrollTo(0,0);return false;"
+        class="text-blue-600 text-sm underline">Voltar ao índice</a>
+    </header>
+    <article class="mt-2">
+      <p>
+        <strong>Listas ordenadas</strong> (<i>&lt;ol&gt;</i>) são usadas quando a ordem dos itens é importante, como em
+        instruções ou rankings. <br>
+        <strong>Listas não ordenadas</strong> (<i>&lt;ul&gt;</i>) são usadas para itens sem ordem específica, como
+        características ou tópicos.
+      </p>
+      <section id="ex-ordered-list" class="mt-4 ml-4">
+        <h3 class="text-xl font-semibold">Exemplo de lista ordenada:</h3>
+        <ol class="list-decimal pl-6">
+          <li>Primeiro passo</li>
+          <li>Segundo passo</li>
+          <li>Terceiro passo</li>
+        </ol>
+      </section>
+      <section id="ex-unordered-list" class="mt-2 ml-4">
+        <h3 class="text-xl font-semibold">Exemplo de lista não ordenada:</h3>
+        <ul class="list-disc pl-6">
+          <li>Maçã</li>
+          <li>Banana</li>
+          <li>Laranja</li>
+        </ul>
+      </section>
+    </article>
+  </section>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+  <section id="refs">    
+    <header class="flex items-baseline gap-4 mb-2">
+      <h2 class="text-2xl">Links de referências</h2>
+      <a href="#" onclick="window.location.hash='';window.scrollTo(0,0);return false;"
+        class="text-blue-600 text-sm underline">Voltar ao índice</a>
+    </header>
+    <ul class="list-disc pl-6 *:w-max *:after:content-[''] *:after:block *:after:w-0 *:after:h-0.5 *:after:bg-zinc-700 *:hover:after:w-full *:focus:after:w-full *:after:transition-all *:after:duration-400">
+      <li><a href="https://www.dio.me/" target="_blank" rel="noopener noreferrer"><strong>DIO</strong></a></li>
+      <li><a href="https://www.w3c.org/" target="_blank" rel="noopener noreferrer"><strong>W3C</strong></a></li>
+      <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer"><strong>MDN Web
+            Docs</strong></a></li>
+      <li><a href="https://www.hostinger.com.br/tutoriais/o-que-e-servidor" target="_blank"
+          rel="noopener noreferrer"><strong>Hostinger - O que é servidor?</strong></a></li>
+      <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer"><strong>W3Schools -
+            HTML</strong></a></li>
+      <li><a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_inform%C3%A1tica" target="_blank"
+          rel="noopener noreferrer"><strong>Wikipedia - História da Informática</strong></a></li>
     </ul>
+  </section>
 
 </body>
+
 </html>
